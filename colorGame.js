@@ -51,8 +51,9 @@ resetButton.addEventListener("click", function(){
     for(var i = 0; i<squares.length; i++){
         squares[i].style.backgroundColor = colors[i];
     }
-    h1.style.backgroundColor = "#232323";
+    h1.style.backgroundColor = "steelblue";
     this.textContent = "New Colors";
+    messageDisplay.textContent = "";
 
 })
 colorDisplay.textContent = pickedColor;
@@ -113,7 +114,6 @@ function randomColor(){
     var g = Math.floor(Math.random() *256);
     //pick a "blue" from 0 to 255
     var b = Math.floor(Math.random() *256);
-    "rgb(r, g, b)"
     return "rgb(" + r + ", " + g + ", " + b  + ")";
 
 }
